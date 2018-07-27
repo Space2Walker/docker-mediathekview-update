@@ -27,14 +27,14 @@ And Start it with your Options
 ```
 sudo docker run --rm --link mysql mediathekview_update:latest 
 ```
-## Options
+### Options
 
 ```
-* -e User=user
-* -e Password=123456
-* -e DB=mysql
-* -e DB_Name=mediathekview 
-* -e Host=mysql 
+-e User=user
+-e Password=123456
+-e DB=mysql
+-e DB_Name=mediathekview 
+-e Host=mysql 
 ```
 
 ## Built With
