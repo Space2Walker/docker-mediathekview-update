@@ -1,4 +1,4 @@
-FROM bravissimolabs/alpine-git as builder
+FROM spac2walker/alpine-git as builder
 
 WORKDIR /usr/src/app
 
