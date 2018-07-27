@@ -4,7 +4,7 @@ WORKDIR /usr/src/app
 
 RUN  git clone https://github.com/mediathekview/plugin.video.mediathekview.git
 
-FROM python:2.7.15-alpine3.8
+FROM python:2.7.15-alpine3.6
 
 WORKDIR /usr/src/app
 
