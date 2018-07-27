@@ -1,4 +1,4 @@
-FROM spac2walker/alpine-git as builder
+FROM space2walker/alpine-git as builder
 
 WORKDIR /usr/src/app
 
