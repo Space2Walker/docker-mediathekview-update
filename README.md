@@ -1,4 +1,4 @@
-# docker-mediathekview-update
+# mediathekview-update
 
 A Docker Image that Updates the Mediathekview database
 
@@ -8,25 +8,23 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+Things you need to install the software
 
 ```
 Docker
 ```
 
-### Installing
+### Start It
 
-Build the Docker Image
-
-```
-sudo docker build -t mediathekview-update .
-```
-
-And Start it with your Options
+Start it with your Options
 
 ```
-sudo docker run --rm --link mysql mediathekview_update:latest 
+sudo docker run --rm -e User=user space2walker/mediathekview-update:latest 
 ```
+
+The only thing todo is to add a Cron job or something similar with the command above, so it can update the DB frequently
+
+
 ### Options
 
 ```
