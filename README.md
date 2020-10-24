@@ -14,19 +14,17 @@ Things you need to install the software
 Docker
 ```
 
-### Build It
-```
-git clone https://github.com/Space2Walker/mediathekview-update.git ./mv-update
-cd ./mv-update
-docker build -t space2walker/mediathekview-update .
-```
-
 ### Start It
 
-Start it with your Options
+Repalce the <> part with your values and start it
 
 ```
-sudo docker run --rm -e User=user space2walker/mediathekview-update:latest 
+sudo docker run --rm -e User=<db_user_name> \
+-e Password=<password> \
+-e DB=mysql \
+-e DB_Name=<schema_name> \ 
+-e Host=<host_ip or container_name> \ 
+ghcr.io/space2walker/mediathekview-update:latest
 ```
 
 The only thing todo is to add a Cron job or something similar with the command above, so it can update the DB frequently
