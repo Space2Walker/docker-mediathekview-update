@@ -1,4 +1,4 @@
-FROM space2walker/alpine-git as builder
+FROM  alpine/git:latest as builder
 
 WORKDIR /usr/src/app
 
@@ -22,4 +22,5 @@ ENV DB=mysql \
     Password=password \
     PYTHONUNBUFFERED=1
 
+RUN chmod +x ./mvupdate3
 CMD ./mvupdate3 $DB -H "$Host" -u "$User" -p "$Password" -d "$DB_Name"
