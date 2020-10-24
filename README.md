@@ -14,6 +14,13 @@ Things you need to install the software
 Docker
 ```
 
+### Build It
+```
+git clone https://github.com/Space2Walker/mediathekview-update.git ./mv-update
+cd ./mv-update
+docker build -t space2walker/mediathekview-update .
+```
+
 ### Start It
 
 Start it with your Options
