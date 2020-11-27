@@ -2,7 +2,7 @@ FROM  alpine/git:latest as builder
 
 WORKDIR /usr/src/app
 
-RUN  git clone --branch develop https://github.com/mediathekview/plugin.video.mediathekview.git
+RUN  git clone --branch master https://github.com/mediathekview/plugin.video.mediathekview.git
 
 FROM python:3.8-alpine
 
